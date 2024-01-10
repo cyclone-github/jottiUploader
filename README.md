@@ -18,5 +18,13 @@ https://virusscan.jotti.org/en-US/search/hash/c62b74f0b4632bfae7ac01e160912b3eff
 ```
 ### Change Log:
 - https://github.com/cyclone-github/jottiUploader/blob/main/CHANGELOG.md
-### Compile from source code info:
-- https://github.com/cyclone-github/scripts/blob/main/intro_to_go.txt
+### Compile from source:
+- If you want the latest features, compiling from source is the best option since the release version may run several revisions behind the source code.
+- This assumes you have Go and Git installed
+  - `git clone https://github.com/cyclone-github/jottiUploader.git`
+  - `cd jottiUploader`
+  - `go mod init jottiUploader`
+  - `go mod tidy`
+  - `go build -ldflags="-s -w" .`
+- Compile from source code how-to:
+  - https://github.com/cyclone-github/scripts/blob/main/intro_to_go.txt
